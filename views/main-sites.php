@@ -9,7 +9,7 @@
 		</p>
 		
 		<div class="row"><?php foreach($sites as $key => $site): ?>
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-4 mb-4">
 				<div class="card">
 					<div class="card-image">
 						<a href="<?=$site['href']?>" target="_blank">
