@@ -1,0 +1,52 @@
+:root {
+	font-size: 20px;
+}
+
+a {
+	color: #00F;
+}
+
+a:hover,
+a:focus,
+a:active
+{
+	color: #F0F;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 40px;
+	position: relative;
+}
+
+h3::before {
+	background-color: #FF0;
+	bottom: 0.25em;
+	content: "";
+	height: 0.5em;
+	left: 0;
+	position: absolute;
+	width: 25%;
+	z-index: -1;
+}
+
+h4 {
+	a {
+		font: inherit;
+	}
+	
+	font-size: 22px;
+	font-weight: bold;
+}
+
+p.large {
+	font-size: 1.15em;
+}

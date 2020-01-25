@@ -1,6 +1,7 @@
 #header {
 	.grid-container {
 		color: #FFF;
+		flex-grow: 1;
 		mix-blend-mode: difference;
 		position: relative;
 		text-align: center;
@@ -8,8 +9,12 @@
 	}
 	
 	align-items: center;
+	background: linear-gradient(
+		45deg,
+		#00F,
+		#FF0
+	);
 	display: flex;
-	font-size: 4px;
 	min-height: 100vh;
 	overflow: hidden;
 	position: relative;
@@ -18,10 +23,16 @@
 
 #header::before {
 	background-color: #002;
+	clip-path: circle(71% at center);
 	content: "";
-	height: calc(100% - 2em);
+	height: calc(100% - 8px);
 	position: absolute;
-	right: 1em;
-	top: 1em;
-	width: calc(100% - 2em);
+	right: 4px;
+	transition: all 1s ease;
+	top: 4px;
+	width: calc(100% - 8px);
+}
+
+body.scrolled #header::before {
+	clip-path: circle(0 at center);
 }
