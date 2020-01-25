@@ -4,7 +4,6 @@
   "description": "My 2020 resume index page",
   "main": "Gruntfile.js",
   "dependencies": {
-    "foundation-sites": "^6.6.1",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",

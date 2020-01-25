@@ -1,5 +1,5 @@
-<section class="padding-vertical-3">
-	<div class="grid-container">
+<section class="py-5">
+	<div class="container">
 		<h3>Websites I&rsquo;ve Made</h3>
 		
 		<p>
@@ -9,13 +9,15 @@
 		</p>
 		
 		<div class="row"><?php foreach($sites as $key => $site): ?>
-			<div class="column large-4">
+			<div class="col-12 col-lg-4">
 				<div class="card">
 					<div class="card-image">
-						<img src="<?=urlBase()?>images/sites/<?=$key?>.png" alt="">
+						<a href="<?=$site['href']?>" target="_blank">
+							<img src="<?=urlBase()?>images/sites/<?=$key?>.png" alt="">
+						</a>
 					</div><!-- .card-image -->
 					
-					<div class="card-section">
+					<div class="card-body">
 						<h4>
 							<a href="<?=$site['href']?>" target="_blank">
 								<?=$site['title']?>

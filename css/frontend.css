@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Khula:800&display=swap");
-.card .card-image {
-  overflow: hidden;
-  position: relative; }
-  .card .card-image img {
-    transition: all 0.25s ease; }
+.card {
+  border-radius: 0;
+  position: relative;
+  height: 100%; }
+  .card .card-body {
+    padding: 1em; }
+    .card .card-body > *:last-child {
+      margin-bottom: 0; }
+  .card .card-image {
+    overflow: hidden;
+    position: relative; }
+    .card .card-image img {
+      transition: all 0.25s ease;
+      width: 100%; }
 
 .card:hover .card-image img {
-  transform: scale(1.25); }
+  transform: scale(1.1); }
 
 body * {
   font-family: 'Noto Sans'; }
@@ -27,7 +36,7 @@ h4 {
   overflow: hidden;
   position: relative;
   width: 100%; }
-  #header .grid-container {
+  #header .container {
     color: #FFF;
     flex-grow: 1;
     mix-blend-mode: difference;

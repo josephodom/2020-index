@@ -3,9 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?=urlBase()?>node_modules/foundation-sites/dist/css/foundation.min.css">
-<link rel="stylesheet" type="text/css" href="<?=urlBase()?>node_modules/foundation-sites/dist/css/foundation-float.min.css">
-<link rel="stylesheet" type="text/css" href="<?=urlBase()?>node_modules/foundation-sites/dist/css/foundation-prototype.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?=urlBase()?>css/frontend.min.css">
 <script type="text/javascript" src="<?=urlBase()?>js/scrolled.js"></script>
 <base href="<?=urlBase()?>">
@@ -15,7 +13,7 @@
 <body>
 
 <header id="header">
-	<div class="grid-container">
+	<div class="container">
 		<h1>
 			Joseph Odom
 		</h1>
@@ -27,7 +25,7 @@
 		<p class="large">
 			Professional web developer since 2015
 		</p>
-	</div><!-- .grid-container -->
+	</div><!-- .container -->
 </header>
 
 <main id="main">
@@ -37,9 +35,9 @@
 </main>
 
 <footer id="footer">
-	<div class="grid-container">
+	<div class="container">
 		&copy; Joseph Odom <?=date('Y')?>
-	</div><!-- .grid-container -->
+	</div><!-- .container -->
 </footer>
 
 </body>
