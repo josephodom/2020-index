@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link rel="stylesheet" type="text/css" href="<?=urlBase()?>css/frontend.min.css">
 <script type="text/javascript" src="<?=urlBase()?>js/scrolled.js"></script>
+<script type="text/javascript" src="<?=urlBase()?>js/graph.js"></script>
 <base href="<?=urlBase()?>">
 <title>Joseph Odom &bull; Web Developer</title>
 </head>
@@ -29,7 +31,9 @@
 </header>
 
 <main id="main">
-	<?=view('main-sites', [
+	<?=view('main/experience')?>
+	
+	<?=view('main/sites', [
 		'sites' => $sites,
 	])?>
 </main>

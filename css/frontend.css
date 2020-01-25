@@ -23,10 +23,51 @@ body * {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.graph,
+.graph li {
   font-family: 'Khula';
   font-weight: 800;
   text-transform: uppercase; }
+
+ul.graph {
+  align-items: flex-end;
+  background-attachment: local;
+  background-image: linear-gradient(90deg, #FFF 0%, #FFF 99%, #000 100%);
+  background-size: 5em;
+  border: 2px solid #000;
+  font-size: 1.25rem;
+  display: flex;
+  height: 12em;
+  list-style: none;
+  margin: 0;
+  overflow: auto hidden;
+  padding: 2em 0 0.5em 0; }
+  ul.graph li {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-weight: 800;
+    min-height: 0;
+    order: 1;
+    position: relative;
+    text-align: center;
+    transition: all 1s ease;
+    width: 5em; }
+  ul.graph li::before {
+    background-color: #00F;
+    border-bottom: 8px solid #000;
+    content: "";
+    flex-grow: 1;
+    margin: auto;
+    width: 1em; }
+  ul.graph li:hover::before {
+    background-color: #F0F; }
+  ul.graph li::after {
+    content: attr(data-years) " year(s)";
+    font-size: 1rem;
+    position: relative;
+    top: -0.5em; }
 
 #header {
   align-items: center;
@@ -96,7 +137,7 @@ h3::before {
   bottom: 0.25em;
   content: "";
   height: 0.5em;
-  left: 0;
+  left: -0.25em;
   position: absolute;
   width: 25%;
   z-index: -1; }
