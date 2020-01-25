@@ -1,0 +1,27 @@
+#header {
+	.grid-container {
+		color: #FFF;
+		mix-blend-mode: difference;
+		position: relative;
+		text-align: center;
+		z-index: 1;
+	}
+	
+	align-items: center;
+	display: flex;
+	font-size: 4px;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#header::before {
+	background-color: #002;
+	content: "";
+	height: calc(100% - 2em);
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	width: calc(100% - 2em);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "2020-resume",
+  "version": "1.0.0",
+  "description": "My 2020 resume index page",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "foundation-sites": "^6.6.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephodom/2020-index.git"
+  },
+  "author": "Joseph Odom",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/josephodom/2020-index/issues"
+  },
+  "homepage": "https://github.com/josephodom/2020-index#readme"
+}
