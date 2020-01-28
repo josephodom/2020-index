@@ -1,0 +1,94 @@
+#icons-container {
+	#icons {
+		li {
+			.fab {
+				background-color: #FF0;
+				border-radius: 50%;
+				font-size: 48px;
+				height: 2em;
+				position: relative;
+				width: 2em;
+			}
+			
+			.fab::before {
+				color: #FFF;
+				mix-blend-mode: difference;
+				position: absolute;
+				right: 50%;
+				top: 50%;
+				transform: translate(50%, -50%);
+				z-index: 1;
+			}
+			
+			padding: 2em 0;
+			text-align: center;
+		}
+		
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		max-height: 440px;
+		transition: max-height 1s ease;
+	}
+	
+	#icons-hide-checkbox {
+		position: fixed;
+		left: -200%;
+	}
+	
+	#icons-hide-checkbox:checked ~ #icons {
+		max-height: 1150px;
+	}
+	
+	#icons-show-hide-label {
+		> * {
+			position: absolute;
+			right: 50%;
+			top: 50%;
+			transform: translate(50%, -50%) scaleY(1);
+			transition: all 1s ease;
+		}
+		
+		background-color: #0FF;
+		bottom: 0;
+		cursor: pointer;
+		height: 3em;
+		left: 50%;
+		position: absolute;
+		text-transform: uppercase;
+		text-align: center;
+		transform: translateX(-50%);
+		width: 12em;
+		z-index: 2;
+	}
+	
+	#icons-show-hide-label:hover {
+		background-color: #F0F;
+	}
+	
+	#icons-hide-checkbox:not(:checked) ~ #icons-show-hide-label {
+		#icons-show-hide-label-up {
+			transform: translate(50%, -50%) scaleY(0);
+		}
+	}
+	
+	#icons-hide-checkbox:checked ~ #icons-show-hide-label {
+		#icons-show-hide-label-down {
+			transform: translate(50%, -50%) scaleY(0);
+		}
+	}
+	
+	padding-bottom: 2em;
+	position: relative;
+}
+
+@media (max-width: 575.98px) {
+	#icons-container {
+		#icons-hide-checkbox:checked ~ #icons {
+			max-height: 1790px;
+		}
+	}
+}

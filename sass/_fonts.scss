@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Khula:800&display=swap');
 
-body * {
+body {
 	font-family: 'Noto Sans';
 }
 
+a,
+.btn,
 h1,
 h2,
 h3,
 h4,
-.graph,
-.graph li
+#icons-show-hide-label
 {
 	font-family: 'Khula';
 	font-weight: 800;

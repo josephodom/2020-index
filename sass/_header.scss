@@ -17,20 +17,21 @@
 	display: flex;
 	min-height: 100vh;
 	overflow: hidden;
+	padding: 32px;
 	position: relative;
 	width: 100%;
 }
 
 #header::before {
-	background-color: #002;
+	background-color: #000;
 	clip-path: circle(71% at center);
 	content: "";
-	height: calc(100% - 8px);
+	height: calc(100% - 64px);
 	position: absolute;
-	right: 4px;
+	right: 32px;
 	transition: all 1s ease;
-	top: 4px;
-	width: calc(100% - 8px);
+	top: 32px;
+	width: calc(100% - 64px);
 }
 
 body.scrolled #header::before {

@@ -1,0 +1,35 @@
+.callout {
+	.container {
+		*:last-child {
+			margin-bottom: 0;
+		}
+		
+		position: relative;
+		z-index: 1;
+	}
+	
+	h3::before {
+		content: unset;
+	}
+	
+	/*
+	background: linear-gradient(
+		45deg,
+		#00F,
+		#FF0
+	);
+	*/
+	background-color: #000;
+	color: #FFF;
+	position: relative;
+}
+
+.callout::before {
+	background-color: rgba(0, 0, 0, 0.1);
+	//content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}

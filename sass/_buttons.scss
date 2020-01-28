@@ -1,0 +1,20 @@
+.btn {
+	border-width: 0;
+	border-radius: 0;
+	box-shadow: unset !important;
+	transition: unset;
+	white-space: nowrap;
+}
+
+.btn.btn-primary {
+	background-color: #0FF;
+	color: #000;
+	padding: 0.75em 2em;
+}
+
+.btn.btn.btn-primary:hover,
+.btn.btn.btn-primary:focus,
+.btn.btn.btn-primary:active
+{
+	background-color: #F0F;
+}
