@@ -50,7 +50,7 @@
 <footer id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-6 mb-4">
+			<div class="col-12 col-lg-4 mb-4">
 				<h3>Contact</h3>
 				
 				<ul class="list-inline">
@@ -77,13 +77,25 @@
 				</ul>
 			</div><!-- .col -->
 			
-			<div class="col-12 col-lg-6 mb-4">
+			<div class="col-12 col-lg-4 mb-4">
 				<h3>Examples</h3>
 				
 				<ul class="list-inline"><?php foreach($examples as $example): ?>
 					<li>
 						<a href="<?=$example['href']?>" target="_blank">
 							<?=$example['title']?>
+						</a>
+					</li>
+				<?php endforeach; ?></ul>
+			</div><!-- .col -->
+			
+			<div class="col-12 col-lg-4 mb-4">
+				<h3>Websites</h3>
+				
+				<ul class="list-inline"><?php foreach($sites as $site): ?>
+					<li>
+						<a href="<?=$site['href']?>" target="_blank">
+							<?=$site['title']?>
 						</a>
 					</li>
 				<?php endforeach; ?></ul>
