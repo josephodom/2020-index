@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteRule ^css\/(.*)? - [L]
-RewriteRule ^images\/(.*)? - [L]
-RewriteRule ^js\/(.*)? - [L]
-RewriteRule ^node_modules\/(.*)? - [L]
-RewriteRule ^(.*)? index.php?uri=$1 [QSA]

@@ -59,7 +59,7 @@ $icons = [
 $examples = [
 	'ubiq' => [
 		'title' => 'Ubiq.css',
-		'href' => '#',
+		'href' => './ubiq/',
 		'description' => 'A custom responsive CSS library',
 	],
 ];
