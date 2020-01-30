@@ -59,8 +59,16 @@ $icons = [
 $examples = [
 	'ubiq' => [
 		'title' => 'Ubiq.css',
-		'href' => './ubiq/',
 		'description' => 'A custom responsive CSS library',
+		'github' => 'custom-library',
+	],
+	'tinyrouter' => [
+		'title' => 'TinyRouter',
+		'description' => 'A tiny PHP router',
+	],
+	'facebook-login' => [
+		'title' => 'Facebook Login API',
+		'description' => 'Facebook login API example',
 	],
 ];
 
